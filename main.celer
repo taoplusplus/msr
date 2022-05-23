@@ -9,6 +9,11 @@ _project:
 CheckPepper:
   At least .v(Pepper) half-heart food left
 
+_config:
+  split-format:
+    Shrine: "[{{%02 Shrine}}] {{_}}"
+
+
 _route:
   - (==) This is a newer version of the route inspired by .code(@MikeysGone). If you are looking for the Mogg Latan route. Go .link([here]https://celer.itntpiston.app/#/gh/iTNTPiston/msr/mogg-latan)
   - Dueling Peaks + Faron + Lake:
