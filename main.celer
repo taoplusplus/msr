@@ -2,7 +2,7 @@ _project:
   name: Master Sword Restricted
   authors:
     - iTNTPiston
-  version: "2.2"
+  version: "3.0"
   description: Get Master Sword without glitches that allow you to get it early
   url: ""
 
@@ -10,6 +10,7 @@ CheckPepper:
   At least .v(Pepper) half-heart food left
 
 _route:
+  - (==) This is a newer version of the route inspired by .code(@MikeysGone). If you are looking for the Mogg Latan route. Go .link([here]https://celer.itntpiston.app/#/gh/iTNTPiston/msr/mogg-latan)
   - Dueling Peaks + Faron + Lake:
     - SOR Clip, No Tod
     - _Equipment::Shield<Pot Lid>:
@@ -111,18 +112,18 @@ _route:
     - _Shrine::KaoMakagh:
         notes: right peg strat
     - .dir(N>) Turn:
-        notes: Raddish before shrine if need
+        notes: Raddish before shrine if skipping soh kofi (default)
     - _Shrine::PumaagNitae
     - _Shrine::YaNaga
   - Akkala:
     - _Warp::Shrine::ShehRata:
         line-color: yellow
-    - .dir(SE) WB + .dir(<E) Turn:
-        coord: [1818,-124.12439431103485]
-    - .!!(Big Hearty Raddish)
-    - _Shrine::SohKofi
-    - .dir(N.) super or 2 Turns
-    - .dir(N) midair
+    - .dir(N>) Turn + .dir(<E) Turn + .dir(E) + .dir(NE):
+        movements:
+          - to: [1656,-609.7963736437196]
+          - to: [1912,-717.8391589481516]
+          - to: [2144,-733.8454975117711]
+        notes: You can choose between soh kofi or katah chuki (this route). For soh kofi, follow the movements in the old route
     - _Shrine::TahMuhl:
         notes: Run to end
     - .dir(E.) + .dir(NE):
@@ -156,23 +157,28 @@ _route:
         notes: Can also elevator BLSS, but need to steer out of the rocks first
     - _Shrine::KaamYatak:
         notes: Turn from peg
-    - .dir(<N) + moblin BTB + .dir(N>) midair
-    - _Shrine::MoggLatan:
-        notes: Canal timing from right peg
-    - Run right blow up a tree, BLSS
-    - _Shrine::TenaKosah
-    - .dir(E) Turn:
-        notes: Can also BLSS, about same speed
-    - _Shrine::ShaeLoya:
-        notes: Need fairy to be safe. If no fairy, can go for square first HIGH or a safer circle first (not 100% consistent)
-    - BLSS
+    - .dir(N>) (super) to tower:
+        coord: [-784,450.6085021074841]
+    - BLSS from ledge
+    - _Shrine::KatahChuki
+    - .dir(E.) Turn + .dir(E>) Low
+    - _Shrine::ZaltaWa
+    - .dir(W) non height + .dir(N) + .dir(.N) Turn + .dir(N.) Turn:
+        movements:
+        - to: [-1553,-603.9764284665398]
+        - to: [-1535.5,-733.0275331357225]
+        notes: Use fairy here if still have
     - _Shrine::MonyaToma
     - .dir(W) Turn
     - _Shrine::MaagNorah
     - .dir(N>) to marita and moblin BTB
     - _Shrine::RinOyaa:
         notes: right peg square first
-    - BLSS off a bench with women
+    - BLSS
+    - _Shrine::ShaGehma
+    - BLSS + .dir(E) delay glider pull
+    - _Shrine::QazaTokki
+    - WB up and slide
     - _Shrine::KeoRuug:
         notes: Square forward
     - Run to statue:
