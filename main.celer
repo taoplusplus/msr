@@ -15,7 +15,8 @@ _config:
 
 
 _route:
-  - (==) This is a newer version of the route inspired by .code(@MikeysGone). If you are looking for the Mogg Latan route. Go .link([here]https://celer.itntpiston.app/#/gh/iTNTPiston/msr/mogg-latan)
+  - (==) This is the current (2022-06-09) world record run by .link([Player 5]https://www.speedrun.com/user/Player5). .link([Video link]https://youtu.be/q13JFCnwW94)
+  - (==) Forked from .link([Piston's msr route]https://celer.itntpiston.app/#/gh/iTNTPiston/msr/)
   - Dueling Peaks + Faron + Lake:
     - SOR Clip, No Tod
     - _Equipment::Shield<Pot Lid>:
